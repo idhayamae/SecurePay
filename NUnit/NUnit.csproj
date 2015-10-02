@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E95CB934-97C5-4DD8-9541-2C83EFBAE975}</ProjectGuid>
+    <ProjectGuid>{D4EE0F75-CD8C-49FE-9C81-A005B8DD70CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NUnit</RootNamespace>
@@ -37,18 +37,19 @@
   <ItemGroup>
     <Reference Include="NuGet.Core, Version=1.6.30117.9648, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="nunit.framework, Version=3.0.5715.30857, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL" />
+    <Reference Include="nunitlite, Version=3.0.5715.30857, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL" />
     <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <HintPath>..\..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+      <HintPath>..\..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver">
-      <HintPath>..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.dll</HintPath>
+      <HintPath>..\..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.Support.dll</HintPath>
+      <HintPath>..\..\..\Users\Administrator\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
