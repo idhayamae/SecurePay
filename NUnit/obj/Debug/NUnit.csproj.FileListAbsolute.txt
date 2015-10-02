@@ -17,6 +17,5 @@ C:\Projects\SecurePay\NUnit\bin\Debug\WebDriver.pdb
 C:\Projects\SecurePay\NUnit\bin\Debug\WebDriver.xml
 C:\Projects\SecurePay\NUnit\bin\Debug\WebDriver.Support.pdb
 C:\Projects\SecurePay\NUnit\bin\Debug\WebDriver.Support.xml
-C:\Projects\SecurePay\NUnit\obj\Debug\NUnit.csprojResolveAssemblyReference.cache
 C:\Projects\SecurePay\NUnit\obj\Debug\NUnit.dll
 C:\Projects\SecurePay\NUnit\obj\Debug\NUnit.pdb

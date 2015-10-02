@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using System;
 using NUnit.Framework;
 
@@ -9,13 +10,25 @@ namespace se_builder
     [TestFixture()]
     public class UnitTest1
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [Test()]
         public void UnitTest()
         {
-            IWebDriver wd = new RemoteWebDriver(DesiredCapabilities.Firefox());
+            //IWebDriver wd = new RemoteWebDriver(DesiredCapabilities.Firefox());
+            
+            //wd.Navigate().GoToUrl("http://113.128.163.253/securepay/account/login.aspx");
+            DesiredCapabilities caps = DesiredCapabilities.InternetExplorer();
+            caps.SetCapability("browser", "IE");
+            caps.SetCapability("browser_version", "11.0");
+            caps.SetCapability("os", "Windows");
+            caps.SetCapability("os_version", "10");
+            caps.SetCapability("resolution", "1024x768");
+            IWebDriver wd = new RemoteWebDriver(new Uri("http://113.128.163.253/securepay/account/login.aspx"), caps);
+
             try
             {
-                wd.Navigate().GoToUrl("http://113.128.163.253/securepay/account/login.aspx");
                 wd.FindElement(By.Id("MainContent_UserName")).Click();
                 wd.FindElement(By.Id("MainContent_UserName")).Clear();
                 wd.FindElement(By.Id("MainContent_UserName")).SendKeys("Sudhakar");
